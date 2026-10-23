@@ -1,0 +1,4555 @@
+{
+  "status": "ok",
+  "chargelocations": [
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 11,
+          "count": 4
+        }
+      ],
+      "ge_id": 26,
+      "name": "Parkhaus Elisenhof Hauptbahnhof",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80335",
+        "street": "Luitpoldstraße 3"
+      },
+      "coordinates": {
+        "lat": 48.141113,
+        "lng": 11.562816
+      },
+      "network": false,
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Parkhaus-Elisenhof-Hauptbahnhof-Luitpoldstrasse-3/26/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 11,
+          "count": 4
+        }
+      ],
+      "ge_id": 484,
+      "name": "Parkgarage Rieger City Ladesäule",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80469",
+        "street": "Frauenstraße 38"
+      },
+      "coordinates": {
+        "lat": 48.134499,
+        "lng": 11.5807
+      },
+      "network": false,
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Parkgarage-Rieger-City-Ladesaeule-Frauenstrasse-38/484/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 11,
+          "count": 4
+        }
+      ],
+      "ge_id": 485,
+      "name": "Parkhaus Salvatorplatz",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80333",
+        "street": "Salvatorplatz 1"
+      },
+      "coordinates": {
+        "lat": 48.1418,
+        "lng": 11.575
+      },
+      "network": false,
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Parkhaus-Salvatorplatz-Salvatorplatz-1/485/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 937,
+      "name": "Seidlstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80335",
+        "street": "Seidlstraße 20"
+      },
+      "coordinates": {
+        "lat": 48.14465,
+        "lng": 11.557738
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Seidlstrasse-Seidlstrasse-20/937/",
+      "fault_report": true,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 11,
+          "count": 2
+        }
+      ],
+      "ge_id": 938,
+      "name": "Handwerkskammer",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81671",
+        "street": "Mühldorfstraße 6"
+      },
+      "coordinates": {
+        "lat": 48.128361,
+        "lng": 11.610445
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Handwerkskammer-Muehldorfstrasse-6/938/",
+      "fault_report": true,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 2188,
+      "name": "Bauerstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80796",
+        "street": "Bauerstraße 4"
+      },
+      "coordinates": {
+        "lat": 48.158909,
+        "lng": 11.574192
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Bauerstrasse-Bauerstrasse-4/2188/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 2281,
+      "name": "Kathi-Kobus-Straße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80797",
+        "street": "Kathi-Kobus-Straße 3"
+      },
+      "coordinates": {
+        "lat": 48.159306,
+        "lng": 11.55649
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Kathi-Kobus-Strasse-Kathi-Kobus-Strasse-3/2281/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 11,
+          "count": 16
+        }
+      ],
+      "ge_id": 2379,
+      "name": "Parkhaus Pschorr Garage",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80331",
+        "street": "Altheimer Eck 14a"
+      },
+      "coordinates": {
+        "lat": 48.137432,
+        "lng": 11.569965
+      },
+      "network": false,
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Parkhaus-Pschorr-Garage-Altheimer-Eck-14a/2379/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 2673,
+      "name": "Landratsamt",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81541",
+        "street": "Mariahilfplatz 17"
+      },
+      "coordinates": {
+        "lat": 48.124401,
+        "lng": 11.5828
+      },
+      "network": "Wirelane",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Landratsamt-Mariahilfplatz-17/2673/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 18
+        }
+      ],
+      "ge_id": 5341,
+      "name": "V-Markt Balanstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81541",
+        "street": "Balanstraße 50"
+      },
+      "coordinates": {
+        "lat": 48.121075,
+        "lng": 11.598632
+      },
+      "network": "Virta",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/V-Markt-Balanstrasse-Balanstrasse-50/5341/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 6884,
+      "name": "Münchener Freiheit - NUR CARSHARING",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80802",
+        "street": "Leopoldstraße 84"
+      },
+      "coordinates": {
+        "lat": 48.163023,
+        "lng": 11.586553
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Muenchener-Freiheit-NUR-CARSHARING-Leopoldstrasse-84/6884/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 11,
+          "count": 6
+        }
+      ],
+      "ge_id": 12706,
+      "name": "Derag Living Hotel Prinzessin Elisabeth",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80469",
+        "street": "Geyerstraße 52"
+      },
+      "coordinates": {
+        "lat": 48.122784,
+        "lng": 11.564846
+      },
+      "network": "Wirelane",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Derag-Living-Hotel-Prinzessin-Elisabeth-Geyerstrasse-52/12706/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 12923,
+      "name": "Königinstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80802",
+        "street": "Königinstraße 103"
+      },
+      "coordinates": {
+        "lat": 48.155312,
+        "lng": 11.588581
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Koeniginstrasse-Koeniginstrasse-103/12923/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 11,
+          "count": 2
+        }
+      ],
+      "ge_id": 13060,
+      "name": "Hotel Sofitel Munich Bayerpost",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80335",
+        "street": "Bayerstraße 12"
+      },
+      "coordinates": {
+        "lat": 48.139538,
+        "lng": 11.556791
+      },
+      "network": "Tesla Destination Charging",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Hotel-Sofitel-Munich-Bayerpost-Bayerstrasse-12/13060/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "CCS",
+          "power": 50,
+          "count": 2
+        },
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 16591,
+      "name": "Sparda-Bank Arnulfstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80335",
+        "street": "Arnulfstraße 15"
+      },
+      "coordinates": {
+        "lat": 48.142117,
+        "lng": 11.552533
+      },
+      "network": "be.energised",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Sparda-Bank-Arnulfstrasse-Arnulfstrasse-15/16591/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 1
+        }
+      ],
+      "ge_id": 17465,
+      "name": "Hotel Platzl",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80331",
+        "street": "Sparkassenstraße 10"
+      },
+      "coordinates": {
+        "lat": 48.137901,
+        "lng": 11.57896
+      },
+      "network": "Tesla Destination Charging",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Hotel-Platzl-Sparkassenstrasse-10/17465/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 18152,
+      "name": "Park One Parkgarage Hilton Munich Park",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80538",
+        "street": "Am Tucherpark 7"
+      },
+      "coordinates": {
+        "lat": 48.152641,
+        "lng": 11.598419
+      },
+      "network": "Tesla Destination Charging",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Park-One-Parkgarage-Hilton-Munich-Park-Am-Tucherpark-7/18152/",
+      "fault_report": true,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 11,
+          "count": 2
+        }
+      ],
+      "ge_id": 18153,
+      "name": "Hotel München Palace",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81675",
+        "street": "Trogerstraße 21"
+      },
+      "coordinates": {
+        "lat": 48.14003,
+        "lng": 11.60126
+      },
+      "network": "Tesla Destination Charging",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Hotel-Muenchen-Palace-Trogerstrasse-21/18153/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        },
+        {
+          "type": "Typ2",
+          "power": 11,
+          "count": 1
+        }
+      ],
+      "ge_id": 18154,
+      "name": "Citadines Arnulfpark",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80636",
+        "street": "Arnulfstraße 51"
+      },
+      "coordinates": {
+        "lat": 48.144726,
+        "lng": 11.542161
+      },
+      "network": "Tesla Destination Charging",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Citadines-Arnulfpark-Arnulfstrasse-51/18154/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        },
+        {
+          "type": "Schuko",
+          "power": 2.3,
+          "count": 2
+        }
+      ],
+      "ge_id": 18570,
+      "name": "Tiefgarage Novotel / IBIS",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80335",
+        "street": "Arnulfstraße 57"
+      },
+      "coordinates": {
+        "lat": 48.145493,
+        "lng": 11.538761
+      },
+      "network": false,
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Tiefgarage-Novotel-IBIS-Arnulfstrasse-57/18570/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 19103,
+      "name": "Albrechtstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80636",
+        "street": "Albrechtstraße 2"
+      },
+      "coordinates": {
+        "lat": 48.151436,
+        "lng": 11.545007
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Albrechtstrasse-Albrechtstrasse-2/19103/",
+      "fault_report": true,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 19106,
+      "name": "Winzererstraße Ecke Schwere-Reiter-Straße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80797",
+        "street": "Winzererstraße 90"
+      },
+      "coordinates": {
+        "lat": 48.161705,
+        "lng": 11.562039
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Winzererstrasse-Ecke-Schwere-Reiter-Strasse-Winzererstrasse-90/19106/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 19116,
+      "name": "Prinzregentenplatz",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81675",
+        "street": "Prinzregentenplatz 10"
+      },
+      "coordinates": {
+        "lat": 48.139367,
+        "lng": 11.604772
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Prinzregentenplatz-Prinzregentenplatz-10/19116/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 19123,
+      "name": "Werinherstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81541",
+        "street": "Werinherstraße 2"
+      },
+      "coordinates": {
+        "lat": 48.115524,
+        "lng": 11.580805
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Werinherstrasse-Werinherstrasse-2/19123/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 19125,
+      "name": "Rosenheimer Platz",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81669",
+        "street": "Rosenheimer Platz 6"
+      },
+      "coordinates": {
+        "lat": 48.129177,
+        "lng": 11.59414
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Rosenheimer-Platz-Rosenheimer-Platz-6/19125/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 19633,
+      "name": "Lothstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80335",
+        "street": "Lothstraße 64"
+      },
+      "coordinates": {
+        "lat": 48.155048,
+        "lng": 11.555793
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Lothstrasse-Lothstrasse-64/19633/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 19646,
+      "name": "Hiltenspergerstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80796",
+        "street": "Hiltenspergerstraße 51"
+      },
+      "coordinates": {
+        "lat": 48.160912,
+        "lng": 11.5668
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Hiltenspergerstrasse-Hiltenspergerstrasse-51/19646/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 19709,
+      "name": "Lindwurmstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80337",
+        "street": "Lindwurmstraße 11"
+      },
+      "coordinates": {
+        "lat": 48.132355,
+        "lng": 11.564611
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Lindwurmstrasse-Lindwurmstrasse-11/19709/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 19903,
+      "name": "Ligsalzstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80339",
+        "street": "Ligsalzstraße 44"
+      },
+      "coordinates": {
+        "lat": 48.134117,
+        "lng": 11.541715
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Ligsalzstrasse-Ligsalzstrasse-44/19903/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 20141,
+      "name": "Schellingstraße 106",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80798",
+        "street": "Schellingstraße 106"
+      },
+      "coordinates": {
+        "lat": 48.153477,
+        "lng": 11.565263
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Schellingstrasse-106-Schellingstrasse-106/20141/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 20142,
+      "name": "Theresienstraße 53",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80333",
+        "street": "Theresienstraße 53"
+      },
+      "coordinates": {
+        "lat": 48.15078,
+        "lng": 11.565229
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Theresienstrasse-53-Theresienstrasse-53/20142/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 6
+        }
+      ],
+      "ge_id": 20143,
+      "name": "Seeriederstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81675",
+        "street": "Seeriederstraße 29"
+      },
+      "coordinates": {
+        "lat": 48.134094,
+        "lng": 11.602298
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Seeriederstrasse-Seeriederstrasse-29/20143/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 1
+        }
+      ],
+      "ge_id": 20428,
+      "name": "Hotel Stadt Rosenheim",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81667",
+        "street": "Orleansplatz 6A"
+      },
+      "coordinates": {
+        "lat": 48.128868,
+        "lng": 11.604384
+      },
+      "network": "Tesla Destination Charging",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Hotel-Stadt-Rosenheim-Orleansplatz-6A/20428/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 21693,
+      "name": "Bavariastraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80336",
+        "street": "Bavariastraße 5"
+      },
+      "coordinates": {
+        "lat": 48.126522,
+        "lng": 11.546369
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Bavariastrasse-Bavariastrasse-5/21693/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 21694,
+      "name": "Implerstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81371",
+        "street": "Implerstraße 28"
+      },
+      "coordinates": {
+        "lat": 48.12067,
+        "lng": 11.548301
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Implerstrasse-Implerstrasse-28/21694/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 22007,
+      "name": "Reichenbachplatz",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80469",
+        "street": "Reichenbachplatz"
+      },
+      "coordinates": {
+        "lat": 48.133408,
+        "lng": 11.576337
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Reichenbachplatz-Reichenbachplatz/22007/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 22008,
+      "name": "Liebigstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80538",
+        "street": "Liebigstraße 5"
+      },
+      "coordinates": {
+        "lat": 48.141418,
+        "lng": 11.58667
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Liebigstrasse-Liebigstrasse-5/22008/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 22020,
+      "name": "Schellingstraße 151",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80797",
+        "street": "Schellingstraße 151"
+      },
+      "coordinates": {
+        "lat": 48.154728,
+        "lng": 11.559823
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Schellingstrasse-151-Schellingstrasse-151/22020/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 22023,
+      "name": "Falkenstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81541",
+        "street": "Falkenstraße 32"
+      },
+      "coordinates": {
+        "lat": 48.121803,
+        "lng": 11.578794
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Falkenstrasse-Falkenstrasse-32/22023/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 23130,
+      "name": "Pfarrstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80538",
+        "street": "Pfarrstraße 3"
+      },
+      "coordinates": {
+        "lat": 48.138961,
+        "lng": 11.587679
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Pfarrstrasse-Pfarrstrasse-3/23130/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 6
+        }
+      ],
+      "ge_id": 23133,
+      "name": "Krumpterstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81543",
+        "street": "Krumpterstraße 3-6"
+      },
+      "coordinates": {
+        "lat": 48.112713,
+        "lng": 11.570895
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Krumpterstrasse-Krumpterstrasse-3-6/23133/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 24730,
+      "name": "Pariser Straße 17 ggü.",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81667",
+        "street": "Pariser Straße 17 ggü."
+      },
+      "coordinates": {
+        "lat": 48.127232,
+        "lng": 11.598446
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Pariser-Strasse-17-ggue-Pariser-Strasse-17-ggue/24730/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 24928,
+      "name": "Hackerbrücke",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80339",
+        "street": "Grasserstraße 6"
+      },
+      "coordinates": {
+        "lat": 48.140125,
+        "lng": 11.548086
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Hackerbruecke-Grasserstrasse-6/24928/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 24929,
+      "name": "Ganghoferstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81373",
+        "street": "Ganghoferstraße 94A"
+      },
+      "coordinates": {
+        "lat": 48.126274,
+        "lng": 11.539076
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Ganghoferstrasse-Ganghoferstrasse-94A/24929/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 24933,
+      "name": "Herzogstandstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81541",
+        "street": "Herzogstandstraße 6"
+      },
+      "coordinates": {
+        "lat": 48.115479,
+        "lng": 11.583143
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Herzogstandstrasse-Herzogstandstrasse-6/24933/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 24938,
+      "name": "Friedrichstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80801",
+        "street": "Friedrichstraße 36"
+      },
+      "coordinates": {
+        "lat": 48.160751,
+        "lng": 11.580412
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Friedrichstrasse-Friedrichstrasse-36/24938/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 24939,
+      "name": "Schellingstraße 8",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80799",
+        "street": "Schellingstraße 8"
+      },
+      "coordinates": {
+        "lat": 48.149464,
+        "lng": 11.57898
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Schellingstrasse-8-Schellingstrasse-8/24939/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 11,
+          "count": 2
+        }
+      ],
+      "ge_id": 25011,
+      "name": "relexa hotel",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80336",
+        "street": "Schwanthalerstraße 58-60"
+      },
+      "coordinates": {
+        "lat": 48.137699,
+        "lng": 11.555697
+      },
+      "network": "Tesla Destination Charging",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/relexa-hotel-Schwanthalerstrasse-58-60/25011/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 25850,
+      "name": "Maximilianstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80539",
+        "street": "Maximilianstraße 16A"
+      },
+      "coordinates": {
+        "lat": 48.138851,
+        "lng": 11.58101
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Maximilianstrasse-Maximilianstrasse-16A/25850/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 25851,
+      "name": "Promenadeplatz",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80333",
+        "street": "Pacellistraße 1"
+      },
+      "coordinates": {
+        "lat": 48.140408,
+        "lng": 11.571486
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Promenadeplatz-Pacellistrasse-1/25851/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 25852,
+      "name": "Maximiliansplatz",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80333",
+        "street": "Maximiliansplatz 13"
+      },
+      "coordinates": {
+        "lat": 48.142097,
+        "lng": 11.573201
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Maximiliansplatz-Maximiliansplatz-13/25852/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 25853,
+      "name": "Westenriederstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80331",
+        "street": "Westenriederstraße 39"
+      },
+      "coordinates": {
+        "lat": 48.135002,
+        "lng": 11.5798
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Westenriederstrasse-Westenriederstrasse-39/25853/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 25854,
+      "name": "Klosterhofstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80331",
+        "street": "Klosterhofstraße 6"
+      },
+      "coordinates": {
+        "lat": 48.133762,
+        "lng": 11.570952
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Klosterhofstrasse-Klosterhofstrasse-6/25854/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 25855,
+      "name": "Herzogspitalstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80331",
+        "street": "Herzogspitalstraße 20"
+      },
+      "coordinates": {
+        "lat": 48.137947,
+        "lng": 11.566885
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Herzogspitalstrasse-Herzogspitalstrasse-20/25855/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 26048,
+      "name": "Tal",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80331",
+        "street": "Tal 36"
+      },
+      "coordinates": {
+        "lat": 48.135639,
+        "lng": 11.580433
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Tal-Tal-36/26048/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 27350,
+      "name": "Mariahilfplatz",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81541",
+        "street": "Mariahilfplatz 13"
+      },
+      "coordinates": {
+        "lat": 48.125179,
+        "lng": 11.58417
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Mariahilfplatz-Mariahilfplatz-13/27350/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 28215,
+      "name": "MaibornWolff GmbH",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80339",
+        "street": "Theresienhöhe 13"
+      },
+      "coordinates": {
+        "lat": 48.133133,
+        "lng": 11.546738
+      },
+      "network": "Digital Energy Solutions",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/MaibornWolff-GmbH-Theresienhoehe-13/28215/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 29101,
+      "name": "Luisenstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80333",
+        "street": "Luisenstraße 22"
+      },
+      "coordinates": {
+        "lat": 48.147907,
+        "lng": 11.565276
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Luisenstrasse-Luisenstrasse-22/29101/",
+      "fault_report": true,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 29266,
+      "name": "Zweigstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80336",
+        "street": "Zweigstraße 10"
+      },
+      "coordinates": {
+        "lat": 48.138378,
+        "lng": 11.562448
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Zweigstrasse-Zweigstrasse-10/29266/",
+      "fault_report": true,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 29945,
+      "name": "Park One im Nove",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80636",
+        "street": "Lilli-Palmer Straße 2"
+      },
+      "coordinates": {
+        "lat": 48.144329,
+        "lng": 11.537552
+      },
+      "network": "TankE",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Park-One-im-Nove-Lilli-Palmer-Strasse-2/29945/",
+      "fault_report": true,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 30094,
+      "name": "Hopfenstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80335",
+        "street": "Hopfenstraße 7"
+      },
+      "coordinates": {
+        "lat": 48.143661,
+        "lng": 11.5546
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Hopfenstrasse-Hopfenstrasse-7/30094/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 3.7,
+          "count": 1
+        }
+      ],
+      "ge_id": 30584,
+      "name": "Hotel Bayrischer Hof",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80333",
+        "street": "Promenadenplatz 2-6"
+      },
+      "coordinates": {
+        "lat": 48.140469,
+        "lng": 11.572588
+      },
+      "network": false,
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Hotel-Bayrischer-Hof-Promenadenplatz-2-6/30584/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 30713,
+      "name": "Karolinenplatz",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80333",
+        "street": "Karolinenplatz 1"
+      },
+      "coordinates": {
+        "lat": 48.144173,
+        "lng": 11.569589
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Karolinenplatz-Karolinenplatz-1/30713/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 32899,
+      "name": "Erika-Mann-Straße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80636",
+        "street": "Erika-Mann-Straße 59"
+      },
+      "coordinates": {
+        "lat": 48.143417,
+        "lng": 11.537226
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Erika-Mann-Strasse-Erika-Mann-Strasse-59/32899/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 32933,
+      "name": "Nordendstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80801",
+        "street": "Nordendstraße 25"
+      },
+      "coordinates": {
+        "lat": 48.155479,
+        "lng": 11.575224
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Nordendstrasse-Nordendstrasse-25/32933/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 33410,
+      "name": "Landwehrstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80336",
+        "street": "Landwehrstraße 11"
+      },
+      "coordinates": {
+        "lat": 48.136314,
+        "lng": 11.563066
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Landwehrstrasse-Landwehrstrasse-11/33410/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 33585,
+      "name": "Maillingerstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80636",
+        "street": "Maillingerstraße 9"
+      },
+      "coordinates": {
+        "lat": 48.148911,
+        "lng": 11.545815
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Maillingerstrasse-Maillingerstrasse-9/33585/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 33586,
+      "name": "Maillingerstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80636",
+        "street": "Maillingerstraße 30"
+      },
+      "coordinates": {
+        "lat": 48.147217,
+        "lng": 11.54346
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Maillingerstrasse-Maillingerstrasse-30/33586/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 33598,
+      "name": "Lothstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80335",
+        "street": "Lothstraße 18"
+      },
+      "coordinates": {
+        "lat": 48.151569,
+        "lng": 11.549273
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Lothstrasse-Lothstrasse-18/33598/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 33599,
+      "name": "Sandstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80335",
+        "street": "Sandstraße 47"
+      },
+      "coordinates": {
+        "lat": 48.150478,
+        "lng": 11.557478
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Sandstrasse-Sandstrasse-47/33599/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 33748,
+      "name": "VePa Parkturm Werksviertel-Mitte",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81671",
+        "street": "Friedenstraße 12"
+      },
+      "coordinates": {
+        "lat": 48.125338,
+        "lng": 11.604878
+      },
+      "network": "Chargepoint",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/VePa-Parkturm-Werksviertel-Mitte-Friedenstrasse-12/33748/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 8
+        }
+      ],
+      "ge_id": 33784,
+      "name": "Parkhaus Autospeicher",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81671",
+        "street": "Atelierstraße 8"
+      },
+      "coordinates": {
+        "lat": 48.124989,
+        "lng": 11.605736
+      },
+      "network": "Chargepoint",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Parkhaus-Autospeicher-Atelierstrasse-8/33784/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 35250,
+      "name": "Beethovenplatz",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80336",
+        "street": "Beethovenplatz 4"
+      },
+      "coordinates": {
+        "lat": 48.13258,
+        "lng": 11.558178
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Beethovenplatz-Beethovenplatz-4/35250/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 35863,
+      "name": "Ganghoferstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80339",
+        "street": "Ganghoferstraße 2"
+      },
+      "coordinates": {
+        "lat": 48.138046,
+        "lng": 11.540655
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Ganghoferstrasse-Ganghoferstrasse-2/35863/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 35909,
+      "name": "Lindwurmstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80337",
+        "street": "Lindwurmstraße 83"
+      },
+      "coordinates": {
+        "lat": 48.129196,
+        "lng": 11.558318
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Lindwurmstrasse-Lindwurmstrasse-83/35909/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 35955,
+      "name": "Daiserstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81371",
+        "street": "Daiserstraße 1"
+      },
+      "coordinates": {
+        "lat": 48.121868,
+        "lng": 11.543994
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Daiserstrasse-Daiserstrasse-1/35955/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 6
+        }
+      ],
+      "ge_id": 35960,
+      "name": "Zenettiplatz",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80337",
+        "street": "Zenettiplatz 2"
+      },
+      "coordinates": {
+        "lat": 48.124416,
+        "lng": 11.555726
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Zenettiplatz-Zenettiplatz-2/35960/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 35962,
+      "name": "Hans-Fischer-Straße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80339",
+        "street": "Hans-Fischer-Straße 10"
+      },
+      "coordinates": {
+        "lat": 48.127926,
+        "lng": 11.544252
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Hans-Fischer-Strasse-Hans-Fischer-Strasse-10/35962/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 35964,
+      "name": "Am Glockenbach",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80469",
+        "street": "Am Glockenbach 14"
+      },
+      "coordinates": {
+        "lat": 48.126282,
+        "lng": 11.566828
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Am-Glockenbach-Am-Glockenbach-14/35964/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 35966,
+      "name": "Bernhard-Wicki-Straße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80335",
+        "street": "Bernhard-Wicki-Straße 8"
+      },
+      "coordinates": {
+        "lat": 48.142593,
+        "lng": 11.547889
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Bernhard-Wicki-Strasse-Bernhard-Wicki-Strasse-8/35966/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 37853,
+      "name": "Nördliche Amalienstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80799",
+        "street": "Amalienstraße 93"
+      },
+      "coordinates": {
+        "lat": 48.151795,
+        "lng": 11.57945
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Noerdliche-Amalienstrasse-Amalienstrasse-93/37853/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 37854,
+      "name": "Clemensstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80803",
+        "street": "Clemensstraße 12"
+      },
+      "coordinates": {
+        "lat": 48.163514,
+        "lng": 11.583793
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Clemensstrasse-Clemensstrasse-12/37854/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 37855,
+      "name": "Georgenstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80798",
+        "street": "Georgenstraße 104"
+      },
+      "coordinates": {
+        "lat": 48.156775,
+        "lng": 11.567997
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Georgenstrasse-Georgenstrasse-104/37855/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 37856,
+      "name": "Ainmillerstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80801",
+        "street": "Ainmillerstraße 41"
+      },
+      "coordinates": {
+        "lat": 48.159123,
+        "lng": 11.575841
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Ainmillerstrasse-Ainmillerstrasse-41/37856/",
+      "fault_report": true,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 37891,
+      "name": "Theresienstraße 160",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80333",
+        "street": "Theresienstraße 160"
+      },
+      "coordinates": {
+        "lat": 48.152137,
+        "lng": 11.56074
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Theresienstrasse-160-Theresienstrasse-160/37891/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 37892,
+      "name": "Görresstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80797",
+        "street": "Görresstraße 48"
+      },
+      "coordinates": {
+        "lat": 48.156274,
+        "lng": 11.560386
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Goerresstrasse-Goerresstrasse-48/37892/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 38149,
+      "name": "Bruderstraße / Prinzregentenstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80538",
+        "street": "Prinzregentenstraße 18"
+      },
+      "coordinates": {
+        "lat": 48.14311,
+        "lng": 11.587106
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Bruderstrasse-Prinzregentenstrasse-Prinzregentenstrasse-18/38149/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 38150,
+      "name": "Herzogstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80803",
+        "street": "Herzogstraße 61"
+      },
+      "coordinates": {
+        "lat": 48.162561,
+        "lng": 11.576122
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Herzogstrasse-Herzogstrasse-61/38150/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 38195,
+      "name": "Klenzestraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80686",
+        "street": "Klenzestraße 82"
+      },
+      "coordinates": {
+        "lat": 48.126157,
+        "lng": 11.570021
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Klenzestrasse-Klenzestrasse-82/38195/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 39256,
+      "name": "Aurbacherstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81541",
+        "street": "Aurbacherstraße 8"
+      },
+      "coordinates": {
+        "lat": 48.122513,
+        "lng": 11.590281
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Aurbacherstrasse-Aurbacherstrasse-8/39256/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 39654,
+      "name": "Seeaustraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80538",
+        "street": "Seeaustraße 1"
+      },
+      "coordinates": {
+        "lat": 48.14418,
+        "lng": 11.592984
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Seeaustrasse-Seeaustrasse-1/39654/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 39684,
+      "name": "Steinstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81667",
+        "street": "Steinstraße 29"
+      },
+      "coordinates": {
+        "lat": 48.132512,
+        "lng": 11.596418
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Steinstrasse-Steinstrasse-29/39684/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 39717,
+      "name": "Lucile-Grahn-Straße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81675",
+        "street": "Lucile-Grahn-Straße 24"
+      },
+      "coordinates": {
+        "lat": 48.135213,
+        "lng": 11.607576
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Lucile-Grahn-Strasse-Lucile-Grahn-Strasse-24/39717/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 39733,
+      "name": "Sckellstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81667",
+        "street": "Sckellstraße 2"
+      },
+      "coordinates": {
+        "lat": 48.135269,
+        "lng": 11.596121
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Sckellstrasse-Sckellstrasse-2/39733/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 39818,
+      "name": "Park One E-Charge Hilton Munich City",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81667",
+        "street": "Rosenheimer Straße 15"
+      },
+      "coordinates": {
+        "lat": 48.130269,
+        "lng": 11.591906
+      },
+      "network": "TankE",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Park-One-E-Charge-Hilton-Munich-City-Rosenheimer-Strasse-15/39818/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 39846,
+      "name": "Innere Wiener",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81667",
+        "street": "Innere Wiener Straße 7"
+      },
+      "coordinates": {
+        "lat": 48.133194,
+        "lng": 11.592687
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Innere-Wiener-Innere-Wiener-Strasse-7/39846/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 40063,
+      "name": "Kufsteiner Platz",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81679",
+        "street": "Pienzenauerstraße 1"
+      },
+      "coordinates": {
+        "lat": 48.150498,
+        "lng": 11.601697
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Kufsteiner-Platz-Pienzenauerstrasse-1/40063/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 40064,
+      "name": "Kolbergerstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81679",
+        "street": "Kolbergerstraße 15"
+      },
+      "coordinates": {
+        "lat": 48.151034,
+        "lng": 11.605774
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Kolbergerstrasse-Kolbergerstrasse-15/40064/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 40115,
+      "name": "Sternwartstraße München",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81679",
+        "street": "Sternwartstraße 4"
+      },
+      "coordinates": {
+        "lat": 48.145666,
+        "lng": 11.603912
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Sternwartstrasse-Muenchen-Sternwartstrasse-4/40115/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 40117,
+      "name": "Donaustraße / Delpstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81679",
+        "street": "Delpstraße 17"
+      },
+      "coordinates": {
+        "lat": 48.146181,
+        "lng": 11.611852
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Donaustrasse-Delpstrasse-Delpstrasse-17/40117/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 40120,
+      "name": "Schellingstraße 84",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80799",
+        "street": "Schellingstraße 84"
+      },
+      "coordinates": {
+        "lat": 48.152423,
+        "lng": 11.568432
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Schellingstrasse-84-Schellingstrasse-84/40120/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 40121,
+      "name": "Feilitzschstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80802",
+        "street": "Feilitzschstraße 17"
+      },
+      "coordinates": {
+        "lat": 48.161026,
+        "lng": 11.589653
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Feilitzschstrasse-Feilitzschstrasse-17/40121/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 40122,
+      "name": "Nikolaistraße / Leopoldstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80802",
+        "street": "Nikolaistraße 2"
+      },
+      "coordinates": {
+        "lat": 48.159108,
+        "lng": 11.585689
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Nikolaistrasse-Leopoldstrasse-Nikolaistrasse-2/40122/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 40154,
+      "name": "Holzhofstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81667",
+        "street": "Holzhofstraße 4"
+      },
+      "coordinates": {
+        "lat": 48.13212,
+        "lng": 11.59343
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Holzhofstrasse-Holzhofstrasse-4/40154/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 40785,
+      "name": "St.-Cajetan-Straße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81669",
+        "street": "St.-Cajetan-Straße 18"
+      },
+      "coordinates": {
+        "lat": 48.121943,
+        "lng": 11.601032
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/St-Cajetan-Strasse-St-Cajetan-Strasse-18/40785/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 41576,
+      "name": "Eduard-Schmid-Straße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81541",
+        "street": "Eduard-Schmid-Straße 2"
+      },
+      "coordinates": {
+        "lat": 48.127569,
+        "lng": 11.580615
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Eduard-Schmid-Strasse-Eduard-Schmid-Strasse-2/41576/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 41600,
+      "name": "Theresienstraße 48 / Museum Brandhorst",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80333",
+        "street": "Theresienstraße 48"
+      },
+      "coordinates": {
+        "lat": 48.148406,
+        "lng": 11.574121
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Theresienstrasse-48-Museum-Brandhorst-Theresienstrasse-48/41600/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 41715,
+      "name": "SWM Giselastraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80802",
+        "street": "Giselastraße 1"
+      },
+      "coordinates": {
+        "lat": 48.155544,
+        "lng": 11.584104
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/SWM-Giselastrasse-Giselastrasse-1/41715/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 41774,
+      "name": "Arcostraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80333",
+        "street": "Arcostraße 6"
+      },
+      "coordinates": {
+        "lat": 48.142118,
+        "lng": 11.566152
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Arcostrasse-Arcostrasse-6/41774/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 41775,
+      "name": "Karlstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80333",
+        "street": "Karlstraße 47"
+      },
+      "coordinates": {
+        "lat": 48.145011,
+        "lng": 11.559817
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Karlstrasse-Karlstrasse-47/41775/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 41778,
+      "name": "Hofgarten",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80539",
+        "street": "Galeriestraße 4"
+      },
+      "coordinates": {
+        "lat": 48.143776,
+        "lng": 11.580593
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Hofgarten-Galeriestrasse-4/41778/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 42194,
+      "name": "Gerhardstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81543",
+        "street": "Gerhardstraße 7"
+      },
+      "coordinates": {
+        "lat": 48.116249,
+        "lng": 11.569462
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Gerhardstrasse-Gerhardstrasse-7/42194/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 42344,
+      "name": "Lilienstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81669",
+        "street": "Lilienstraße 57"
+      },
+      "coordinates": {
+        "lat": 48.128572,
+        "lng": 11.585723
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Lilienstrasse-Lilienstrasse-57/42344/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 42361,
+      "name": "Hohenwaldeckstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81541",
+        "street": "Hohenwaldeckstraße 20"
+      },
+      "coordinates": {
+        "lat": 48.116514,
+        "lng": 11.594156
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Hohenwaldeckstrasse-Hohenwaldeckstrasse-20/42361/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 42660,
+      "name": "Kupferhammerstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81543",
+        "street": "Kupferhammerstraße 2"
+      },
+      "coordinates": {
+        "lat": 48.118389,
+        "lng": 11.574756
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Kupferhammerstrasse-Kupferhammerstrasse-2/42660/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 43047,
+      "name": "Wirtstraße 11",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81539",
+        "street": "Wirtstraße 11"
+      },
+      "coordinates": {
+        "lat": 48.11234,
+        "lng": 11.577611
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Wirtstrasse-11-Wirtstrasse-11/43047/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 43104,
+      "name": "Wirtstraße 14",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81539",
+        "street": "Wirtstraße 14"
+      },
+      "coordinates": {
+        "lat": 48.112808,
+        "lng": 11.576032
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Wirtstrasse-14-Wirtstrasse-14/43104/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 43270,
+      "name": "Rotwandstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81539",
+        "street": "Rotwandstraße 6"
+      },
+      "coordinates": {
+        "lat": 48.114906,
+        "lng": 11.58717
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Rotwandstrasse-Rotwandstrasse-6/43270/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 43685,
+      "name": "Sommerstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81543",
+        "street": "Sommerstraße 1"
+      },
+      "coordinates": {
+        "lat": 48.122989,
+        "lng": 11.57565
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Sommerstrasse-Sommerstrasse-1/43685/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "CHAdeMO",
+          "power": 50,
+          "count": 1
+        },
+        {
+          "type": "CCS",
+          "power": 50,
+          "count": 1
+        },
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 3
+        }
+      ],
+      "ge_id": 43686,
+      "name": "Claude-Lorrain-Straße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81543",
+        "street": "Claude-Lorrain-Straße 24"
+      },
+      "coordinates": {
+        "lat": 48.120398,
+        "lng": 11.570272
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Claude-Lorrain-Strasse-Claude-Lorrain-Strasse-24/43686/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 43699,
+      "name": "Pfänderstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80636",
+        "street": "Pfänderstraße 27a"
+      },
+      "coordinates": {
+        "lat": 48.156066,
+        "lng": 11.547822
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Pfaenderstrasse-Pfaenderstrasse-27a/43699/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 43705,
+      "name": "Leopoldstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80802",
+        "street": "Leopoldstraße 49"
+      },
+      "coordinates": {
+        "lat": 48.16036,
+        "lng": 11.585534
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Leopoldstrasse-Leopoldstrasse-49/43705/",
+      "fault_report": true,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 43706,
+      "name": "Jakob-Klar-Straße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80796",
+        "street": "Jakob-Klar-Straße 14"
+      },
+      "coordinates": {
+        "lat": 48.160518,
+        "lng": 11.571956
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Jakob-Klar-Strasse-Jakob-Klar-Strasse-14/43706/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 43707,
+      "name": "Franz-Joseph-Straße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80801",
+        "street": "Franz-Joseph-Straße 23"
+      },
+      "coordinates": {
+        "lat": 48.157548,
+        "lng": 11.579912
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Franz-Joseph-Strasse-Franz-Joseph-Strasse-23/43707/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 43708,
+      "name": "Lerchenfeldstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80538",
+        "street": "Lerchenfeldstraße 9"
+      },
+      "coordinates": {
+        "lat": 48.145909,
+        "lng": 11.592829
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Lerchenfeldstrasse-Lerchenfeldstrasse-9/43708/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 43709,
+      "name": "Widenmayerstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80538",
+        "street": "Widenmayerstraße 15"
+      },
+      "coordinates": {
+        "lat": 48.140175,
+        "lng": 11.59358
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Widenmayerstrasse-Widenmayerstrasse-15/43709/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 43710,
+      "name": "Baaderstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80469",
+        "street": "Baaderstraße 52"
+      },
+      "coordinates": {
+        "lat": 48.129821,
+        "lng": 11.577498
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Baaderstrasse-Baaderstrasse-52/43710/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 43711,
+      "name": "Ickstattstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80469",
+        "street": "Ickstattstraße 6"
+      },
+      "coordinates": {
+        "lat": 48.129119,
+        "lng": 11.5716
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Ickstattstrasse-Ickstattstrasse-6/43711/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 43712,
+      "name": "Ehrengutstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80469",
+        "street": "Ehrengutstraße 5"
+      },
+      "coordinates": {
+        "lat": 48.121285,
+        "lng": 11.559334
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Ehrengutstrasse-Ehrengutstrasse-5/43712/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 43714,
+      "name": "Ismaninger Straße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81675",
+        "street": "Ismaninger Straße 57"
+      },
+      "coordinates": {
+        "lat": 48.142158,
+        "lng": 11.601058
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Ismaninger-Strasse-Ismaninger-Strasse-57/43714/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 43791,
+      "name": "Reisingerstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80337",
+        "street": "Reisingerstraße 10"
+      },
+      "coordinates": {
+        "lat": 48.130888,
+        "lng": 11.565005
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Reisingerstrasse-Reisingerstrasse-10/43791/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 43979,
+      "name": "Beetzstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81679",
+        "street": "Beetzstraße 7"
+      },
+      "coordinates": {
+        "lat": 48.141576,
+        "lng": 11.609105
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Beetzstrasse-Beetzstrasse-7/43979/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 6
+        }
+      ],
+      "ge_id": 44825,
+      "name": "Park One Tiefgarage Plaza",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81671",
+        "street": "Hanne-Hiob-Straße 10"
+      },
+      "coordinates": {
+        "lat": 48.125754,
+        "lng": 11.611229
+      },
+      "network": "TankE",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Park-One-Tiefgarage-Plaza-Hanne-Hiob-Strasse-10/44825/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        },
+        {
+          "type": "Typ2",
+          "power": 11,
+          "count": 1
+        }
+      ],
+      "ge_id": 45721,
+      "name": "Operngarage",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80539",
+        "street": "Max-Joseph-Platz 4"
+      },
+      "coordinates": {
+        "lat": 48.140003,
+        "lng": 11.577895
+      },
+      "network": "Shell Recharge",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Operngarage-Max-Joseph-Platz-4/45721/",
+      "fault_report": true,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 46664,
+      "name": "Leopoldstraße Ecke Franz-Joseph-Straße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80801",
+        "street": "Leopoldstraße 19"
+      },
+      "coordinates": {
+        "lat": 48.157331,
+        "lng": 11.583784
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Leopoldstrasse-Ecke-Franz-Joseph-Strasse-Leopoldstrasse-19/46664/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 46665,
+      "name": "Leopoldstraße Ecke Georgenstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80802",
+        "street": "Leopoldstraße 7"
+      },
+      "coordinates": {
+        "lat": 48.154143,
+        "lng": 11.582749
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Leopoldstrasse-Ecke-Georgenstrasse-Leopoldstrasse-7/46665/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 46742,
+      "name": "Herzogstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80796",
+        "street": "Herzogstraße 105"
+      },
+      "coordinates": {
+        "lat": 48.163132,
+        "lng": 11.568893
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Herzogstrasse-Herzogstrasse-105/46742/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 3
+        },
+        {
+          "type": "Typ2",
+          "power": 11,
+          "count": 3
+        }
+      ],
+      "ge_id": 48256,
+      "name": "Adalbertstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80799",
+        "street": "Adalbertstraße 82"
+      },
+      "coordinates": {
+        "lat": 48.153743,
+        "lng": 11.573279
+      },
+      "network": "Qwello",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Adalbertstrasse-Adalbertstrasse-82/48256/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 11,
+          "count": 6
+        }
+      ],
+      "ge_id": 48699,
+      "name": "Livinghotel am Deutschen Museum",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81669",
+        "street": "Rablstraße 10"
+      },
+      "coordinates": {
+        "lat": 48.12761,
+        "lng": 11.589442
+      },
+      "network": "Wirelane",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Livinghotel-am-Deutschen-Museum-Rablstrasse-10/48699/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 5
+        },
+        {
+          "type": "Typ2",
+          "power": 11,
+          "count": 2
+        }
+      ],
+      "ge_id": 49643,
+      "name": "Barer Straße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80799",
+        "street": "Barer Straße 29"
+      },
+      "coordinates": {
+        "lat": 48.149874,
+        "lng": 11.57249
+      },
+      "network": "Qwello",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Barer-Strasse-Barer-Strasse-29/49643/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 50559,
+      "name": "Elsässer Straße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81667",
+        "street": "Elsässer Straße 19"
+      },
+      "coordinates": {
+        "lat": 48.130602,
+        "lng": 11.605108
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Elsaesser-Strasse-Elsaesser-Strasse-19/50559/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "CCS",
+          "power": 50,
+          "count": 1
+        },
+        {
+          "type": "CHAdeMO",
+          "power": 50,
+          "count": 1
+        },
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 1
+        }
+      ],
+      "ge_id": 50804,
+      "name": "Schnellladesäule Pariser Straße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81667",
+        "street": "Pariser Straße 30"
+      },
+      "coordinates": {
+        "lat": 48.127476,
+        "lng": 11.598915
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Schnellladesaeule-Pariser-Strasse-Pariser-Strasse-30/50804/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "CCS",
+          "power": 50,
+          "count": 1
+        },
+        {
+          "type": "CHAdeMO",
+          "power": 50,
+          "count": 1
+        },
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 1
+        }
+      ],
+      "ge_id": 52814,
+      "name": "Haager Straße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81671",
+        "street": "Haager Straße 2"
+      },
+      "coordinates": {
+        "lat": 48.126608,
+        "lng": 11.608399
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Haager-Strasse-Haager-Strasse-2/52814/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "CHAdeMO",
+          "power": 50,
+          "count": 1
+        },
+        {
+          "type": "CCS",
+          "power": 50,
+          "count": 1
+        },
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 1
+        }
+      ],
+      "ge_id": 54394,
+      "name": "Taxistand Ganghoferstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80339",
+        "street": "Ganghoferstraße 23"
+      },
+      "coordinates": {
+        "lat": 48.134593,
+        "lng": 11.539924
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Taxistand-Ganghoferstrasse-Ganghoferstrasse-23/54394/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 11,
+          "count": 18
+        }
+      ],
+      "ge_id": 54896,
+      "name": "Parkgarage Hofbräuhaus",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80539",
+        "street": "Thomas-Wimmer-Ring"
+      },
+      "coordinates": {
+        "lat": 48.136487,
+        "lng": 11.583903
+      },
+      "network": false,
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Parkgarage-Hofbraeuhaus-Thomas-Wimmer-Ring/54896/",
+      "fault_report": true,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "CHAdeMO",
+          "power": 50,
+          "count": 1
+        },
+        {
+          "type": "CCS",
+          "power": 50,
+          "count": 1
+        },
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 1
+        }
+      ],
+      "ge_id": 56456,
+      "name": "Finanzamt",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80335",
+        "street": "Deroystraße 4"
+      },
+      "coordinates": {
+        "lat": 48.145737,
+        "lng": 11.54602
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Finanzamt-Deroystrasse-4/56456/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 58790,
+      "name": "Mariannenplatz",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80538",
+        "street": "Thierschstraße 25"
+      },
+      "coordinates": {
+        "lat": 48.13514,
+        "lng": 11.586432
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Mariannenplatz-Thierschstrasse-25/58790/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 60990,
+      "name": "Gabelsbergerstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80333",
+        "street": "Gabelsbergerstraße 35"
+      },
+      "coordinates": {
+        "lat": 48.147518,
+        "lng": 11.568225
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Gabelsbergerstrasse-Gabelsbergerstrasse-35/60990/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 11,
+          "count": 1
+        }
+      ],
+      "ge_id": 61222,
+      "name": "Hotel Westend",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80339",
+        "street": "Schwanthalerstraße 121"
+      },
+      "coordinates": {
+        "lat": 48.137619,
+        "lng": 11.545338
+      },
+      "network": false,
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Hotel-Westend-Schwanthalerstrasse-121/61222/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "CCS",
+          "power": 22,
+          "count": 1
+        },
+        {
+          "type": "Typ2",
+          "power": 11,
+          "count": 1
+        }
+      ],
+      "ge_id": 63283,
+      "name": "Autohaus Werndl",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81671",
+        "street": "Haager Straße 5"
+      },
+      "coordinates": {
+        "lat": 48.127093,
+        "lng": 11.608246
+      },
+      "network": "Elli",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Autohaus-Werndl-Haager-Strasse-5/63283/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 11,
+          "count": 1
+        }
+      ],
+      "ge_id": 63687,
+      "name": "Feinkost Käfer",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81679",
+        "street": "Geibelstraße 6"
+      },
+      "coordinates": {
+        "lat": 48.141852,
+        "lng": 11.602432
+      },
+      "network": "Mennekes",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Feinkost-Kaefer-Geibelstrasse-6/63687/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 11,
+          "count": 2
+        }
+      ],
+      "ge_id": 63688,
+      "name": "Porsche Destination Charger Feinkost Käfer",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81679",
+        "street": "Geibelstraße 6"
+      },
+      "coordinates": {
+        "lat": 48.141743,
+        "lng": 11.602391
+      },
+      "network": false,
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Porsche-Destination-Charger-Feinkost-Kaefer-Geibelstrasse-6/63688/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 11,
+          "count": 6
+        }
+      ],
+      "ge_id": 64961,
+      "name": "Holiday Inn München Leuchtenbergring",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81677",
+        "street": "Leuchtenbergring 20"
+      },
+      "coordinates": {
+        "lat": 48.13565,
+        "lng": 11.614333
+      },
+      "network": false,
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Holiday-Inn-Muenchen-Leuchtenbergring-Leuchtenbergring-20/64961/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 6
+        }
+      ],
+      "ge_id": 65676,
+      "name": "Novotel München City",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81669",
+        "street": "Hochstraße 11"
+      },
+      "coordinates": {
+        "lat": 48.129334,
+        "lng": 11.589042
+      },
+      "network": "Wirelane",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Novotel-Muenchen-City-Hochstrasse-11/65676/",
+      "fault_report": true,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 11,
+          "count": 4
+        }
+      ],
+      "ge_id": 70098,
+      "name": "Parkhaus Forum Schwanthalerhöhe",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80339",
+        "street": "Gollierstraße 6"
+      },
+      "coordinates": {
+        "lat": 48.135804,
+        "lng": 11.546899
+      },
+      "network": false,
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Parkhaus-Forum-Schwanthalerhoehe-Gollierstrasse-6/70098/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "CCS",
+          "power": 100,
+          "count": 2
+        }
+      ],
+      "ge_id": 70100,
+      "name": "HPC Parkhaus Forum Schwanthalerhöhe",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80339",
+        "street": "Gollierstraße 6"
+      },
+      "coordinates": {
+        "lat": 48.135825,
+        "lng": 11.546722
+      },
+      "network": "Mer",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/HPC-Parkhaus-Forum-Schwanthalerhoehe-Gollierstrasse-6/70100/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "CCS",
+          "power": 150,
+          "count": 1
+        },
+        {
+          "type": "CCS",
+          "power": 100,
+          "count": 1
+        },
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 1
+        }
+      ],
+      "ge_id": 70796,
+      "name": "EDEKA Fraaß (Schlachthof)",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80337",
+        "street": "Zenettistraße 20"
+      },
+      "coordinates": {
+        "lat": 48.124747,
+        "lng": 11.556813
+      },
+      "network": "Edeka",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/EDEKA-Fraass-Schlachthof-Zenettistrasse-20/70796/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "CCS",
+          "power": 75,
+          "count": 1
+        },
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 1
+        }
+      ],
+      "ge_id": 73974,
+      "name": "Volkswagen Zentrum München Schleibingerstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81669",
+        "street": "Schleibingerstraße 12-16"
+      },
+      "coordinates": {
+        "lat": 48.12807,
+        "lng": 11.590501
+      },
+      "network": "be.energised",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Volkswagen-Zentrum-Muenchen-Schleibingerstrasse-Schleibingerstrasse-12-16/73974/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 75781,
+      "name": "EUROMASTER Implerstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81371",
+        "street": "Implerstraße 19"
+      },
+      "coordinates": {
+        "lat": 48.121782,
+        "lng": 11.549828
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/EUROMASTER-Implerstrasse-Implerstrasse-19/75781/",
+      "fault_report": true,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "CCS",
+          "power": 150,
+          "count": 2
+        }
+      ],
+      "ge_id": 78968,
+      "name": "McDonald's Regerstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81541",
+        "street": "Regerstraße 25"
+      },
+      "coordinates": {
+        "lat": 48.120941,
+        "lng": 11.586548
+      },
+      "network": "EWE Go",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/McDonald-s-Regerstrasse-Regerstrasse-25/78968/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 79008,
+      "name": "Finkenstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80333",
+        "street": "Finkenstraße 4"
+      },
+      "coordinates": {
+        "lat": 48.143869,
+        "lng": 11.574719
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Finkenstrasse-Finkenstrasse-4/79008/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 79697,
+      "name": "Morassistraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80469",
+        "street": "Morassistraße 10"
+      },
+      "coordinates": {
+        "lat": 48.132428,
+        "lng": 11.582739
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Morassistrasse-Morassistrasse-10/79697/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "CCS",
+          "power": 150,
+          "count": 2
+        }
+      ],
+      "ge_id": 84284,
+      "name": "AVIA Tankstelle Hochstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81669",
+        "street": "Hochstraße 5"
+      },
+      "coordinates": {
+        "lat": 48.130108,
+        "lng": 11.589127
+      },
+      "network": "be.energised",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/AVIA-Tankstelle-Hochstrasse-Hochstrasse-5/84284/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 3
+        }
+      ],
+      "ge_id": 84342,
+      "name": "Tiefgarage Motorama",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81669",
+        "street": "Hochstraße 5"
+      },
+      "coordinates": {
+        "lat": 48.130168,
+        "lng": 11.58938
+      },
+      "network": "be.energised",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Tiefgarage-Motorama-Hochstrasse-5/84342/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 1
+        }
+      ],
+      "ge_id": 87470,
+      "name": "Dingolfinger Straße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81673",
+        "street": "Dingolfinger Straße 1"
+      },
+      "coordinates": {
+        "lat": 48.132238,
+        "lng": 11.614448
+      },
+      "network": "be.energised",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Dingolfinger-Strasse-Dingolfinger-Strasse-1/87470/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 8
+        }
+      ],
+      "ge_id": 91432,
+      "name": "Stadtsparkasse Marienplatz",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80331",
+        "street": "Sparkassenstraße 2-4"
+      },
+      "coordinates": {
+        "lat": 48.136595,
+        "lng": 11.578292
+      },
+      "network": false,
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Stadtsparkasse-Marienplatz-Sparkassenstrasse-2-4/91432/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 95653,
+      "name": "Rumfordstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80469",
+        "street": "Rumfordstraße 49"
+      },
+      "coordinates": {
+        "lat": 48.133756,
+        "lng": 11.581574
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Rumfordstrasse-Rumfordstrasse-49/95653/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 11,
+          "count": 30
+        }
+      ],
+      "ge_id": 96727,
+      "name": "Tiefgarage Oberanger",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80331",
+        "street": "Oberanger 27"
+      },
+      "coordinates": {
+        "lat": 48.134629,
+        "lng": 11.571074
+      },
+      "network": "Contipark",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Tiefgarage-Oberanger-Oberanger-27/96727/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 25
+        }
+      ],
+      "ge_id": 96729,
+      "name": "Hotel Vier Jahreszeiten Kempinski",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80539",
+        "street": "Maximilianstraße 17"
+      },
+      "coordinates": {
+        "lat": 48.139652,
+        "lng": 11.582036
+      },
+      "network": "ChargeOne",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Hotel-Vier-Jahreszeiten-Kempinski-Maximilianstrasse-17/96729/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 11,
+          "count": 20
+        }
+      ],
+      "ge_id": 97408,
+      "name": "Tiefgarage Marienplatz",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80331",
+        "street": "Rindermarkt 16"
+      },
+      "coordinates": {
+        "lat": 48.136555,
+        "lng": 11.574634
+      },
+      "network": "Contipark",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Tiefgarage-Marienplatz-Rindermarkt-16/97408/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 4
+        }
+      ],
+      "ge_id": 98085,
+      "name": "Lidl Kapuzinerstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80337",
+        "street": "Kapuzinerstraße 18"
+      },
+      "coordinates": {
+        "lat": 48.126584,
+        "lng": 11.557134
+      },
+      "network": "Lidl",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Lidl-Kapuzinerstrasse-Kapuzinerstrasse-18/98085/",
+      "fault_report": false,
+      "verified": true
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 11,
+          "count": 2
+        }
+      ],
+      "ge_id": 98550,
+      "name": "Hotel Motel One München-East Side",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81667",
+        "street": "Orleansstraße 87"
+      },
+      "coordinates": {
+        "lat": 48.131793,
+        "lng": 11.60902
+      },
+      "network": "Wirelane",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Hotel-Motel-One-Muenchen-East-Side-Orleansstrasse-87/98550/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "CCS",
+          "power": 120,
+          "count": 2
+        }
+      ],
+      "ge_id": 99726,
+      "name": "Arnulfstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80335",
+        "street": "Arnulfstraße 2"
+      },
+      "coordinates": {
+        "lat": 48.141812,
+        "lng": 11.559942
+      },
+      "network": "Vattenfall",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Arnulfstrasse-Arnulfstrasse-2/99726/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 11,
+          "count": 2
+        }
+      ],
+      "ge_id": 102074,
+      "name": "Leonardo Hotel & Residenz München",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81539",
+        "street": "Kesselbergstraße 23"
+      },
+      "coordinates": {
+        "lat": 48.113258,
+        "lng": 11.582978
+      },
+      "network": "Wirelane",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Leonardo-Hotel-Residenz-Muenchen-Kesselbergstrasse-23/102074/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 14
+        }
+      ],
+      "ge_id": 102630,
+      "name": "Parkhaus Koenigshof",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80335",
+        "street": "Karlsplatz 25"
+      },
+      "coordinates": {
+        "lat": 48.139824,
+        "lng": 11.564373
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Parkhaus-Koenigshof-Karlsplatz-25/102630/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 6
+        }
+      ],
+      "ge_id": 105518,
+      "name": "Münchner Volkstheater",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80337",
+        "street": "Tumblingerstraße 29"
+      },
+      "coordinates": {
+        "lat": 48.123419,
+        "lng": 11.555192
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Muenchner-Volkstheater-Tumblingerstrasse-29/105518/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 2
+        }
+      ],
+      "ge_id": 105519,
+      "name": "Rückertstraße",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "80336",
+        "street": "Rückertstraße 1"
+      },
+      "coordinates": {
+        "lat": 48.132603,
+        "lng": 11.555252
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/Rueckertstrasse-Rueckertstrasse-1/105519/",
+      "fault_report": false,
+      "verified": false
+    },
+    {
+      "chargepoints": [
+        {
+          "type": "Typ2",
+          "power": 22,
+          "count": 1
+        }
+      ],
+      "ge_id": 106967,
+      "name": "SPARKS University of Applied Sciences",
+      "address": {
+        "city": "München",
+        "country": "Deutschland",
+        "postcode": "81671",
+        "street": "August-Everding-Straße 25"
+      },
+      "coordinates": {
+        "lat": 48.126538,
+        "lng": 11.611165
+      },
+      "network": "Ladenetz",
+      "url": "//www.goingelectric.de/stromtankstellen/Deutschland/Muenchen/SPARKS-University-of-Applied-Sciences-August-Everding-Strasse-25/106967/",
+      "fault_report": false,
+      "verified": false
+    }
+  ]
+}

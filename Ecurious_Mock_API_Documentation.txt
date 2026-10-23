@@ -1,0 +1,544 @@
+ECURIOUS RESERVATION API — 模拟接口文档（纯文本）
+版本：1.0.0-mock
+用途：WATT THE HACK / Ecurious Challenge 后端开发与 Mock 联调
+重要声明：本文件是根据赛题自行设计的虚构接口规范，不是 Ecurious 官方文档。
+          API 地址、路径、字段、状态、认证和事件模式均须以现场资料为准。
+参考契约：本次生成的 openapi.yaml（OpenAPI 3.0.3）
+
+======================================================================
+0. 简介及边界
+======================================================================
+
+本模拟接口描述“你们的后端 ↔ Ecurious 服务器”之间的通信。
+主要功能：
+  (1) 查看哪些测试车位支持预约。
+  (2) 读取车位物理状态。
+  (3) 创建、查询和释放预约。
+  (4) 轮询车牌识别、车位占用变化和预约过期事件。
+
+明确不包含：
+  - GoingElectric 的充电站地图 API（属于另一家数据提供方）。
+  - 真实充电桩启动/停止充电的接口。
+  - 硬件的低层直接控制或绕过安全联锁的能力。
+  - Ecurious 官方确认的 Webhook、WebSocket 或 OCPI/OCPP 接口。
+
+本文件中的“释放预约”指结束预约资源的占用或保护安排；
+具体物理动作由 Ecurious 端决定，不能理解为可在车辆占位时强行升降地锁。
+
+======================================================================
+1. API 基础信息
+======================================================================
+
+API 名称：Ecurious Reservation API (FICTIONAL MOCK)
+版本：v1 / 1.0.0-mock
+Base URL（完全虚构）：https://api.sandbox.ecurious.example/v1
+请求/响应格式：application/json
+认证方式（假设）：HTTP Bearer Token
+认证请求头：Authorization: Bearer YOUR_TEST_TOKEN
+时间格式：ISO 8601 / RFC 3339，包含明确的时区偏移量
+示例时间：2026-10-24T10:30:00+02:00
+
+创建预约时还要求：
+  Idempotency-Key: <由客户端生成的唯一字符串>
+
+此 Header 用于降低网络重试导致重复创建预约的风险。
+生产级别的幂等范围、有效期和重放语义，由实际企业文档决定。
+
+注意：.example 为保留的示例域名，不能真正连接 Ecurious 服务器。
+
+======================================================================
+2. 端点目录
+======================================================================
+
+[01] GET  /bays
+     获取可用测试车位清单。
+
+[02] GET  /bays/{bay_id}/status
+     查询指定车位的物理占用状态与保护状态。
+
+[03] POST /reservations
+     创建预约。
+
+[04] GET  /reservations/{reservation_id}
+     查询指定预约。
+
+[05] POST /reservations/{reservation_id}/release
+     结束/释放一个预约。
+
+[06] GET  /events?after={cursor}
+     轮询车牌检测、占位变化、预约过期事件。
+
+======================================================================
+3. 接口详细说明
+======================================================================
+
+---------------------------------------------------------------------
+3.1 GET /bays — 获取测试车位列表
+---------------------------------------------------------------------
+
+用途：获取 Ecurious 当前暴露给本次挑战的车位，以及它们是否支持预约。
+认证：需要 Bearer Token（模拟约定）
+请求参数：无
+
+请求示例：
+  GET https://api.sandbox.ecurious.example/v1/bays
+  Authorization: Bearer YOUR_TEST_TOKEN
+
+成功响应：HTTP 200 OK
+
+{
+  "bays": [
+    {
+      "bay_id": "BAY-001",
+      "reservation_supported": true,
+      "charger_reference": "GE-EXAMPLE-101"
+    },
+    {
+      "bay_id": "BAY-002",
+      "reservation_supported": false,
+      "charger_reference": null
+    }
+  ]
+}
+
+字段说明：
+  bays                   array   车位数组
+  bay_id                 string  Ecurious 测试车位 ID
+  reservation_supported  bool    是否支持预约
+  charger_reference      string|null  可选的外部充电站标识
+
+注意：charger_reference 只是模拟字段；并未确认 Ecurious 提供
+GoingElectric 站点 ID 的直接映射。映射关系可能需由你们自己维护。
+
+---------------------------------------------------------------------
+3.2 GET /bays/{bay_id}/status — 查询车位状态
+---------------------------------------------------------------------
+
+用途：查询物理车位是否被占用、预约保护设施是否生效，以及关联预约。
+路径参数：bay_id，string，必填，例如 BAY-001
+
+请求示例：
+  GET https://api.sandbox.ecurious.example/v1/bays/BAY-001/status
+
+成功响应：HTTP 200 OK
+
+{
+  "bay_id": "BAY-001",
+  "occupancy": "occupied",
+  "protection": "released",
+  "active_reservation_id": "RES-10001",
+  "last_seen_at": "2026-10-24T10:35:00+02:00"
+}
+
+字段说明：
+  bay_id                  string       车位 ID
+  occupancy               string       free | occupied | unknown
+  protection              string       protected | released | unknown
+  active_reservation_id   string|null  关联预约 ID，可能为空
+  last_seen_at            datetime|null 最近状态更新时间
+
+可能响应：
+  200  查询成功
+  404  不存在该车位
+
+特别注意：
+  occupancy 和 protection 是两个不同概念。
+  例如 protected 不一定等于空位，occupied 也不一定代表被合法预约车辆使用。
+  保护设施的具体形态与控制逻辑须由 Ecurious 现场解释。
+
+---------------------------------------------------------------------
+3.3 POST /reservations — 创建预约
+---------------------------------------------------------------------
+
+用途：为指定车位、车牌和时间区间创建预约。
+请求头：
+  Authorization: Bearer YOUR_TEST_TOKEN
+  Content-Type: application/json
+  Idempotency-Key: booking-demo-0001
+
+请求示例：
+  POST https://api.sandbox.ecurious.example/v1/reservations
+
+{
+  "bay_id": "BAY-001",
+  "license_plate": "M-AB1234",
+  "start_time": "2026-10-24T10:30:00+02:00",
+  "end_time": "2026-10-24T11:30:00+02:00"
+}
+
+成功响应：HTTP 201 Created
+
+{
+  "reservation_id": "RES-10001",
+  "bay_id": "BAY-001",
+  "status": "reserved",
+  "hardware_status": "protected",
+  "created_at": "2026-10-24T10:25:00+02:00"
+}
+
+请求字段：
+  bay_id          string    必填，目标测试车位
+  license_plate   string    必填，预约车辆车牌
+  start_time      datetime  必填，预约开始时间
+  end_time        datetime  必填，预约结束时间
+
+响应字段：
+  reservation_id  string         服务器生成的预约 ID
+  bay_id          string         车位 ID
+  status          string         预约业务状态
+  hardware_status string|null    可选，硬件保护状态摘要（模拟）
+  created_at      datetime|null  创建时间
+
+可能响应：
+  201  创建成功
+  409  时间冲突或车位不可预约
+  422  数据格式不合法（例如非法时间区间）
+
+409 冲突响应示例：
+{
+  "error": "BAY_ALREADY_RESERVED",
+  "message": "Requested time slot is unavailable"
+}
+
+业务约束：
+  - 后端必须等待该 API 确认成功，才能向前端返回“预约成功”。
+  - 本地 SQLite 只能记录已确认的企业预约，不能替代外部预约仲裁。
+  - 对超时请求要先查询或对账，不可盲目重新发起不同幂等键的请求。
+  - 车牌属于个人相关数据，应尽量降低日志、数据库中的暴露。
+
+---------------------------------------------------------------------
+3.4 GET /reservations/{reservation_id} — 查询预约
+---------------------------------------------------------------------
+
+用途：查询服务器当前记录的预约状态。
+路径参数：reservation_id，string，必填，例如 RES-10001
+
+请求示例：
+  GET https://api.sandbox.ecurious.example/v1/reservations/RES-10001
+
+成功响应：HTTP 200 OK
+
+{
+  "reservation_id": "RES-10001",
+  "bay_id": "BAY-001",
+  "status": "checked_in",
+  "hardware_status": "released",
+  "created_at": "2026-10-24T10:25:00+02:00"
+}
+
+status（本 Mock 定义的枚举）：
+  reserved    已预约，等待车辆到场
+  checked_in  到场签到成功
+  released    预约已完成释放
+  expired     预约已过期
+  cancelled   预约已取消
+
+可能响应：
+  200  查询成功
+  404  不存在该预约
+
+注意：本模拟 Reservation 模型并没有 charging 状态。
+充电是否真正开始，不能通过本接口假定已经得到验证。
+
+---------------------------------------------------------------------
+3.5 POST /reservations/{reservation_id}/release — 释放预约
+---------------------------------------------------------------------
+
+用途：结束指定预约并让 Ecurious 侧执行受控的资源释放流程。
+路径参数：reservation_id，string，必填
+
+请求示例：
+  POST https://api.sandbox.ecurious.example/v1/reservations/RES-10001/release
+  Content-Type: application/json
+
+{
+  "reason": "charging_completed"
+}
+
+reason 允许值（本 Mock 定义）：
+  charging_completed   充电结束
+  user_cancelled       用户取消
+  no_show              预约者未到场
+  operator_action      运营人员操作
+
+成功响应：HTTP 200 OK
+
+{
+  "reservation_id": "RES-10001",
+  "bay_id": "BAY-001",
+  "status": "released",
+  "hardware_status": "released",
+  "created_at": "2026-10-24T10:25:00+02:00"
+}
+
+可能响应：
+  200  释放成功
+  409  当前物理状态下不允许释放
+
+注意：
+  - release ≠ 无条件强制机械解锁。
+  - 应先了解现场设备的车辆检测、安全联锁、手动干预等约束。
+  - 这个 Mock 没有单独的“取消预约”端点；可以用 release +
+    reason=user_cancelled 表达取消意图，但真实 API 可能有独立 cancel 操作。
+  - 如已存在车辆，不应绕开服务端安全规则发出危险控制。
+
+---------------------------------------------------------------------
+3.6 GET /events?after={cursor} — 轮询事件
+---------------------------------------------------------------------
+
+用途：获取从指定游标之后产生的车牌、占位和预约过期事件。
+此接口是为了提前开发而做的假设：现场可能采用 Webhook 或 WebSocket。
+
+请求示例：
+  GET https://api.sandbox.ecurious.example/v1/events?after=cursor-0008
+
+成功响应：HTTP 200 OK
+
+{
+  "events": [
+    {
+      "event_id": "EVT-9001",
+      "type": "plate.detected",
+      "bay_id": "BAY-001",
+      "license_plate": "M-AB1234",
+      "confidence": 0.97,
+      "timestamp": "2026-10-24T10:35:00+02:00"
+    },
+    {
+      "event_id": "EVT-9002",
+      "type": "occupancy.changed",
+      "bay_id": "BAY-001",
+      "license_plate": null,
+      "confidence": null,
+      "timestamp": "2026-10-24T10:36:00+02:00"
+    }
+  ],
+  "next_cursor": "cursor-0010"
+}
+
+请求参数：
+  after           string（可选）  上次返回的 next_cursor
+
+响应字段：
+  events          array         新事件列表
+  next_cursor     string|null   下一页或下一轮轮询游标
+
+事件类型（本 Mock 定义）：
+  plate.detected       识别到车牌
+  occupancy.changed    车位占用状态变化
+  reservation.expired  预约过期
+
+事件对象字段：
+  event_id       string        唯一事件 ID
+  type           string        事件类型
+  bay_id         string        发生事件的车位
+  license_plate  string|null   识别的车牌，可缺失
+  confidence     number|null   识别置信度，范围 0～1
+  timestamp      datetime      事件时间
+
+提醒：occupancy.changed 事件对象不包含新的 occupancy 值。
+收到它之后，可以调用 GET /bays/{bay_id}/status 获取最新物理状态。
+
+轮询侧建议：
+  - 记录 cursor，以便继续消费事件；
+  - 使用 event_id 去重，避免重试导致重复签到或重复释放；
+  - 无法识别或低置信度的车牌应进入人工确认/异常流程；
+  - 车牌识别成功 ≠ 证明车辆实际占据该车位；
+  - 对事件流中断、延迟和乱序做好恢复处理。
+
+======================================================================
+4. 通用数据结构
+======================================================================
+
+4.1 Bay
+  bay_id: string (required)
+  reservation_supported: boolean (required)
+  charger_reference: string | null (optional)
+
+4.2 BayStatus
+  bay_id: string (required)
+  occupancy: free | occupied | unknown (required)
+  protection: protected | released | unknown (required)
+  active_reservation_id: string | null (optional)
+  last_seen_at: datetime | null (optional)
+
+4.3 CreateReservation
+  bay_id: string (required)
+  license_plate: string (required)
+  start_time: datetime (required)
+  end_time: datetime (required)
+
+4.4 Reservation
+  reservation_id: string (required)
+  bay_id: string (required)
+  status: reserved | checked_in | released | expired | cancelled (required)
+  hardware_status: string | null (optional)
+  created_at: datetime | null (optional)
+
+4.5 Event
+  event_id: string (required)
+  type: plate.detected | occupancy.changed | reservation.expired (required)
+  bay_id: string (required)
+  license_plate: string | null (optional)
+  confidence: number 0.0～1.0 | null (optional)
+  timestamp: datetime (required)
+
+4.6 Error
+  error: string (optional)
+  message: string (optional)
+
+这些字段以随附 openapi.yaml 定义为准；上文值示例均属 Mock 数据。
+
+======================================================================
+5. HTTP 状态码与异常处理
+======================================================================
+
+200 OK                查询、释放等成功
+201 Created           创建预约成功
+400 Bad Request       一般请求错误（仅建议预留，OpenAPI 未明确列出）
+401 Unauthorized      认证失败（仅建议预留，OpenAPI 未明确列出）
+403 Forbidden         无访问权限（仅建议预留，OpenAPI 未明确列出）
+404 Not Found         车位或预约不存在
+409 Conflict          预约冲突或当前硬件状态禁止释放
+422 Unprocessable Entity  创建预约参数不合法
+429 Too Many Requests 请求过快（仅建议预留，OpenAPI 未明确列出）
+500/502/503           服务端、网关或上游故障（仅建议预留）
+
+建议你们的 FastAPI 对外统一错误结构，例如：
+{
+  "error": "ECURIOUS_UNAVAILABLE",
+  "message": "Reservation provider temporarily unavailable"
+}
+
+该结构是“你们自己的 API”设计建议，不是 Ecurious 官方响应定义。
+
+======================================================================
+6. 端到端业务流程（演示脚本）
+======================================================================
+
+情境 A：正常预约车辆到达
+
+  1. 前端从 GoingElectric 数据中查询公共充电站。
+  2. 后端将演示站点映射到 Ecurious 测试 bay_id。
+  3. 后端调用 GET /bays/BAY-001/status，检查硬件状态。
+  4. 用户选择时间和车牌，后端调用 POST /reservations。
+  5. 服务器返回 HTTP 201、reservation_id、status=reserved。
+  6. 前端提示已预约，后台在 SQLite 记录外部预约 ID。
+  7. 车辆来到测试车位；摄像头识别车牌并产生 plate.detected。
+  8. 后端从 /events 读到事件，确认车牌、时间、车位相匹配。
+  9. 后端查询预约/车位最新状态，必要时依官方 API 进行签到。
+ 10. 前端显示“签到成功”；硬件的真实动作按现场规则演示。
+ 11. “开始充电”环节仅在真实设备或合法演示方法支持时确认；
+     本 Mock 不提供充电桩会话控制/测量接口。
+ 12. 充电/演示结束后调用 POST /reservations/{id}/release。
+ 13. 再次读取车位与预约状态，验证预约已结束。
+
+特别说明：本 Mock 没有单独 check-in API。
+车辆签到如何反映到 Ecurious 服务器，需以现场文档为准。
+
+情境 B：No-Show（爽约）
+
+  1. 预约已成功，进入有效时间窗口。
+  2. 自定义宽限期内没有有效签到事件。
+  3. 后端重新读取预约/硬件状态，避免误判。
+  4. 满足业务政策后，调用 release，reason=no_show。
+  5. 记录事件，通知前端，更新统计指标。
+
+情境 C：Blocked Bay（车位被占）
+
+  1. 收到 occupancy.changed 或非预约车牌的 plate.detected。
+  2. 查询最新物理状态，并核验有效预约。
+  3. 区分识别错误、陌生车辆经过以及车位确实被占用。
+  4. 视情况通知预约用户、运营方，提出替代车位方案。
+  5. 不在未经确认时强行释放或操纵物理设备。
+
+======================================================================
+7. FastAPI 端建议的适配层（不是企业 API 的一部分）
+======================================================================
+
+请将业务层与 Ecurious API 的具体 URL/字段解耦。
+
+EcuriousAdapter（抽象接口）建议方法：
+  list_bays() -> list[Bay]
+  get_bay_status(bay_id: str) -> BayStatus
+  create_reservation(payload, idempotency_key: str) -> Reservation
+  get_reservation(reservation_id: str) -> Reservation
+  release_reservation(reservation_id: str, reason: str) -> Reservation
+  poll_events(after: str | None) -> EventPage
+
+具体实现：
+  MockEcuriousAdapter  用内存/SQLite 模拟，不依赖外部网络。
+  HttpEcuriousAdapter  拿到官方 API 文档后对接真实服务器。
+
+建议你们自己的前端 API：
+  GET    /api/stations
+  GET    /api/bays/{bay_id}/status
+  POST   /api/reservations
+  GET    /api/reservations/{reservation_id}
+  POST   /api/reservations/{reservation_id}/release
+  GET    /api/reservations/{reservation_id}/status
+  GET    /api/analytics/summary
+
+上述 /api/* 都是你们开发的后端接口，并非 Ecurious 外部 API。
+前端不能直接接触企业 Bearer Token。
+
+======================================================================
+8. 安全和 GDPR
+======================================================================
+
+  - 只使用赛事提供的测试硬件与账号，不连接生产充电设施。
+  - API Key/Token 放在后端环境变量，不写入浏览器 JS 或 Git 仓库。
+  - 使用车牌所需的最低限度数据，不存原始摄像头影像，除非必要且获授权。
+  - 测试期间优先使用授权的测试车牌，不使用无关人员的真实信息。
+  - 给车牌和事件设定必要的保留期限及删除策略。
+  - 车牌匹配失败应允许安全的人工确认，不要因为一次识别错误强制动作。
+  - 不能通过代码绕过物理设备安全联锁。
+  - 以上是开发原则，不代表已获得法律合规认证。
+
+======================================================================
+9. 现场必须确认的问题
+======================================================================
+
+  Q1. 官方 Base URL、认证机制、Token 有效期分别是什么？
+  Q2. 如何查询测试车位 ID？是否提供 GoingElectric 站点映射？
+  Q3. 预约是否需要开始/结束时间？并发冲突由谁判定？
+  Q4. 预约成功之后，硬件是自动保护车位还是需要额外命令？
+  Q5. 正确车牌到达后，是自动授权进入还是必须调用签到/解锁 API？
+  Q6. 事件通过 Polling、Webhook 或 WebSocket 提供？有重放/签名机制吗？
+  Q7. 如何区分车辆经过、实际占位、真正开始充电？
+  Q8. 取消预约与物理释放是不是两个不同操作？
+  Q9. 硬件遇到占位、失联或动作失败时，服务端有哪些错误码？
+  Q10. 测试车牌数据的保留期限、访问授权和删除方式是什么？
+
+======================================================================
+10. 简单 cURL 调用示例（地址不可实际访问）
+======================================================================
+
+# 查询车位
+curl -H "Authorization: Bearer YOUR_TEST_TOKEN" \
+  "https://api.sandbox.ecurious.example/v1/bays"
+
+# 创建预约
+curl -X POST "https://api.sandbox.ecurious.example/v1/reservations" \
+  -H "Authorization: Bearer YOUR_TEST_TOKEN" \
+  -H "Content-Type: application/json" \
+  -H "Idempotency-Key: booking-demo-0001" \
+  -d '{"bay_id":"BAY-001","license_plate":"M-AB1234","start_time":"2026-10-24T10:30:00+02:00","end_time":"2026-10-24T11:30:00+02:00"}'
+
+# 查询预约
+curl -H "Authorization: Bearer YOUR_TEST_TOKEN" \
+  "https://api.sandbox.ecurious.example/v1/reservations/RES-10001"
+
+# 轮询事件
+curl -H "Authorization: Bearer YOUR_TEST_TOKEN" \
+  "https://api.sandbox.ecurious.example/v1/events?after=cursor-0008"
+
+# 释放预约
+curl -X POST "https://api.sandbox.ecurious.example/v1/reservations/RES-10001/release" \
+  -H "Authorization: Bearer YOUR_TEST_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"reason":"charging_completed"}'
+
+======================================================================
+END OF MOCK API DOCUMENTATION
+======================================================================
