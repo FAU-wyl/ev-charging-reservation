@@ -2,6 +2,54 @@
 
 A full-stack prototype for EV drivers and Charge Point Operators (CPOs), featuring map-based charging station discovery, user accounts and vehicle management, reservation conflict handling, ECURIOUS physical parking locks, automatic check-in, No-Show handling, Blocked Bay management, operational alerts, and analytics.
 
+## Hackathon Challenge Context
+
+This project was developed for the **Ecurious Challenge: Smart Reservation for Public EV Charging** at the Watt the Hack hackathon. The challenge asks teams to add a reliable reservation feature to a public EV charging app: a driver should be able to find and reserve a charge point and, crucially, find the booked bay physically available on arrival. The problem deliberately spans software, UX, energy systems, hardware, and business rather than assuming prior e-mobility expertise.
+
+### Challenge Setup
+
+The hackathon provides an end-to-end test environment:
+
+- **Ecurious reservation hardware** installed at a test charging bay physically protects the space for the driver who booked it.
+- A **built-in camera with license plate recognition (LPR)** identifies the vehicle occupying or arriving at the bay.
+- The **Ecurious server** exposes the hardware controls and status, including reserve/release operations and license-plate events.
+- **GoingElectric** supplies public charge-point information such as locations, connectors, and charging power for map and search features.
+- Ecurious mentors, on-site credentials, API documentation, and the installed test bay are available during the hackathon. OCPP `ReserveNow` / `CancelReservation` and OCPI reservation commands are suggested as interoperability references.
+
+The mandatory core is a working integration across **charging app <-> Ecurious server <-> reservation hardware**, demonstrated through the complete journey:
+
+`find charger -> reserve -> arrive and check in via LPR -> charge -> release`
+
+### Expected Deliverables
+
+Teams are expected to:
+
+1. Build a mobile or web prototype that displays public charge points using GoingElectric data.
+2. Demonstrate the full reservation cycle on the supplied Ecurious hardware.
+3. Document the architecture, API calls, data flows, design decisions, tools, and unsuccessful approaches.
+4. Address at least two deeper mission areas.
+5. Explain limitations and how the solution could scale to other apps, operators, locations, and hardware.
+
+The optional mission areas are **No-Shows**, **Blocked Bays**, **License Plate Recognition**, **Interoperability**, **New Use Cases** (including events, retail, hotels, workplaces, and fleets), **Utilisation**, and the **Business Case** for reservation pricing, no-show fees, subscriptions, or revenue sharing. A polished interface is a bonus; the emphasis is on a thoughtful, documented, and transferable solution.
+
+### Evaluation and Prize
+
+The jury scores each category from 1 to 5 and applies the following weights:
+
+| Criterion | Weight | Focus |
+| --- | ---: | --- |
+| Technical Implementation | 30% | Live app/server/hardware integration, complete reservation cycle, edge cases, and code quality |
+| Solution Concept & Innovation | 20% | Original mission-area solutions, creative LPR use, and new use cases |
+| Interoperability & Scalability | 15% | Open APIs, OCPI/OCPP alignment, and transferability |
+| Business Case & CPO Value | 20% | Plausible pricing, stakeholder value, and measurable utilisation impact |
+| Documentation & Pitch | 15% | Architecture and decision records, API documentation, lessons learned, demo, and presentation |
+
+The live hardware reservation cycle is required for a top ranking, and Technical Implementation is the tie-breaker. The winning team receives **EUR 1,000**.
+
+### Fair Play, Safety, and Privacy
+
+Only the challenge-provided hardware and server access may be used; public or production charging infrastructure must not be disturbed. Implementations must respect GoingElectric and other data-source terms. User, location, and license-plate data must be handled responsibly and in accordance with GDPR, including data minimisation, appropriate retention, and consent. Clear privacy violations may reduce the jury score.
+
 The project maintains two explicitly separated operating modes:
 
 - `mock`: Uses the fictional Mock Server included in the repository, suitable for development, automated testing, and full demonstrations.
