@@ -1,0 +1,202 @@
+openapi: 3.0.3
+info:
+  title: Ecurious Reservation API - FICTIONAL MOCK
+  version: 1.0.0-mock
+  description: Entirely invented for hackathon development. NOT an official Ecurious specification.
+servers:
+  - url: https://api.sandbox.ecurious.example/v1
+security:
+  - bearerAuth: []
+paths:
+  /bays:
+    get:
+      summary: List test bays
+      responses:
+        '200':
+          description: Bays
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  bays:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Bay'
+  /bays/{bay_id}/status:
+    get:
+      summary: Get physical bay status
+      parameters:
+        - $ref: '#/components/parameters/BayId'
+      responses:
+        '200':
+          description: Status
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BayStatus'
+        '404':
+          $ref: '#/components/responses/NotFound'
+  /reservations:
+    post:
+      summary: Reserve a bay
+      description: Idempotency-Key header prevents duplicate reservations. Server arbitrates conflicting requests.
+      parameters:
+        - name: Idempotency-Key
+          in: header
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateReservation'
+      responses:
+        '201':
+          description: Reservation accepted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Reservation'
+        '409':
+          description: Reservation conflict
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '422':
+          description: Invalid input
+  /reservations/{reservation_id}:
+    get:
+      summary: Read reservation
+      parameters:
+        - $ref: '#/components/parameters/ReservationId'
+      responses:
+        '200':
+          description: Reservation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Reservation'
+        '404':
+          $ref: '#/components/responses/NotFound'
+  /reservations/{reservation_id}/release:
+    post:
+      summary: End reservation (hardware handles safety interlocks)
+      parameters:
+        - $ref: '#/components/parameters/ReservationId'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [reason]
+              properties:
+                reason:
+                  type: string
+                  enum: [charging_completed, user_cancelled, no_show, operator_action]
+      responses:
+        '200':
+          description: Released
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Reservation'
+        '409':
+          description: Release not allowed due to current physical state
+  /events:
+    get:
+      summary: Poll plate and occupancy events (mock assumption)
+      parameters:
+        - name: after
+          in: query
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Event page
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  events:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Event'
+                  next_cursor:
+                    type: string
+                    nullable: true
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+  parameters:
+    BayId:
+      name: bay_id
+      in: path
+      required: true
+      schema:
+        type: string
+    ReservationId:
+      name: reservation_id
+      in: path
+      required: true
+      schema:
+        type: string
+  responses:
+    NotFound:
+      description: Resource not found
+  schemas:
+    Bay:
+      type: object
+      required: [bay_id, reservation_supported]
+      properties:
+        bay_id: {type: string, example: BAY-001}
+        reservation_supported: {type: boolean, example: true}
+        charger_reference: {type: string, nullable: true}
+    BayStatus:
+      type: object
+      required: [bay_id, occupancy, protection]
+      properties:
+        bay_id: {type: string}
+        occupancy: {type: string, enum: [free, occupied, unknown]}
+        protection: {type: string, enum: [protected, released, unknown]}
+        active_reservation_id: {type: string, nullable: true}
+        last_seen_at: {type: string, format: date-time, nullable: true}
+    CreateReservation:
+      type: object
+      required: [bay_id, license_plate, start_time, end_time]
+      properties:
+        bay_id: {type: string}
+        license_plate: {type: string}
+        start_time: {type: string, format: date-time}
+        end_time: {type: string, format: date-time}
+    Reservation:
+      type: object
+      required: [reservation_id, bay_id, status]
+      properties:
+        reservation_id: {type: string}
+        bay_id: {type: string}
+        status: {type: string, enum: [reserved, checked_in, released, expired, cancelled]}
+        hardware_status: {type: string, nullable: true}
+        created_at: {type: string, format: date-time, nullable: true}
+    Event:
+      type: object
+      required: [event_id, type, bay_id, timestamp]
+      properties:
+        event_id: {type: string}
+        type: {type: string, enum: [plate.detected, occupancy.changed, reservation.expired]}
+        bay_id: {type: string}
+        license_plate: {type: string, nullable: true}
+        confidence: {type: number, minimum: 0, maximum: 1, nullable: true}
+        timestamp: {type: string, format: date-time}
+    Error:
+      type: object
+      properties:
+        error: {type: string, example: BAY_ALREADY_RESERVED}
+        message: {type: string}

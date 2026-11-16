@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ecurious Demo Charging Bill</title>
+<style>
+  :root { --green:#16a34a; --dark:#0f172a; --muted:#64748b; --line:#e2e8f0; --bg:#f1f5f9; }
+  * { box-sizing:border-box; }
+  body { margin:0; padding:32px 16px; background:var(--bg); color:var(--dark);
+         font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  .invoice { max-width:760px; margin:0 auto; background:#fff; border-radius:16px;
+             box-shadow:0 10px 30px rgba(15,23,42,.1); overflow:hidden; }
+  .head { background:linear-gradient(135deg,#052e16,var(--green)); color:#fff; padding:28px 32px;
+          display:flex; justify-content:space-between; align-items:flex-start; gap:16px; flex-wrap:wrap; }
+  .brand { font-size:22px; font-weight:700; }
+  .brand small { display:block; font-size:13px; font-weight:400; opacity:.85; margin-top:4px; }
+  .meta { text-align:right; font-size:13px; line-height:1.8; }
+  .meta code { background:rgba(255,255,255,.18); padding:2px 6px; border-radius:4px; }
+  .paid { display:inline-block; background:#fff; color:var(--green); font-weight:700;
+          padding:2px 10px; border-radius:999px; font-size:12px; }
+  .demo { margin:20px 32px 0; background:#fff7ed; color:#9a3412; border:1px solid #fdba74;
+          border-radius:10px; padding:12px 14px; font-weight:700; text-align:center; }
+  .body { padding:28px 32px; }
+  h2 { font-size:15px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--green); }
+  h2:first-child { margin-top:0; }
+  .grid { display:grid; grid-template-columns:repeat(2,1fr); gap:10px 24px; font-size:14px; }
+  .grid div span { display:block; color:var(--muted); font-size:12px; }
+  .stats { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+  .stat { background:#f0fdf4; border-radius:12px; padding:14px; text-align:center; }
+  .stat b { display:block; font-size:22px; color:var(--green); }
+  .stat span { font-size:12px; color:var(--muted); }
+  table { width:100%; border-collapse:collapse; font-size:14px; }
+  th, td { padding:10px 8px; border-bottom:1px solid var(--line); text-align:left; }
+  th { color:var(--muted); font-weight:500; font-size:12px; }
+  .r { text-align:right; }
+  .sum td { border:0; padding:6px 8px; }
+  .total td { font-size:18px; font-weight:700; padding-top:12px; border-top:2px solid var(--dark); }
+  .total .amt { color:var(--green); }
+  .eco { margin-top:24px; background:#ecfdf5; border-radius:12px; padding:14px 16px; font-size:14px; }
+  .foot { padding:18px 32px; background:#f8fafc; color:var(--muted); font-size:12px; text-align:center; }
+  @media (max-width:560px) { .grid, .stats { grid-template-columns:1fr; } .meta { text-align:left; } }
+</style>
+</head>
+<body>
+<div class="invoice">
+  <div class="head">
+    <div class="brand">ECURIOUS<small>Charging Bill</small></div>
+    <div class="meta">
+      Bill No. <code>{{invoice_no}}</code><br>
+      Reservation ID <code>{{reservation_id}}</code><br>
+      Issued {{issued_at}}<br>
+      <span class="paid">{{pay_status}}</span>
+    </div>
+  </div>
+  <div class="demo">DEMO BILL - SIMULATED / ESTIMATED COSTS - NOT A TAX INVOICE</div>
+  <div class="body">
+    <h2>Charging Details</h2>
+    <div class="grid">
+      <div><span>Station</span>{{station_name}}</div>
+      <div><span>Charger / Bay</span>{{charger_id}} / {{bay_id}}</div>
+      <div><span>Connector - Power</span>{{connector}} - {{power_kw}} kW</div>
+      <div><span>License Plate</span>{{plate_masked}}</div>
+    </div>
+    <h2>Timeline</h2>
+    <table>
+      <tr><th>Stage</th><th>Time</th><th class="r">Note</th></tr>
+      <tr><td>Reservation created</td><td>{{t_reserved}}</td><td class="r">-</td></tr>
+      <tr><td>Vehicle arrived</td><td>{{t_arrived}}</td><td class="r">{{arrive_note}}</td></tr>
+      <tr><td>Charging started</td><td>{{t_start}}</td><td class="r">-</td></tr>
+      <tr><td>Charging ended</td><td>{{t_end}}</td><td class="r"><b>{{charge_minutes}} min</b></td></tr>
+      <tr><td>Bay released</td><td>{{t_release}}</td><td class="r">Departure confirmed</td></tr>
+    </table>
+    <h2>Simulated Charging Summary</h2>
+    <div class="stats">
+      <div class="stat"><b>{{charge_minutes}}</b><span>Minutes</span></div>
+      <div class="stat"><b>{{hourly_rate}}</b><span>EUR / hour</span></div>
+      <div class="stat"><b>{{charging_fee}}</b><span>Estimated charging</span></div>
+    </div>
+    <h2>Charges</h2>
+    <table>
+      <tr><th>Item</th><th class="r">Basis</th><th class="r">Amount</th></tr>
+      {{charge_rows}}
+    </table>
+    <table class="sum">
+      <tr><td class="r">VAT</td><td class="r" style="width:140px">Not calculated (Demo)</td></tr>
+      <tr class="total"><td class="r">Estimated total</td><td class="r amt">{{total}}</td></tr>
+    </table>
+    <h2>Payment</h2>
+    <div class="grid">
+      <div><span>Method</span>Demo simulation only</div>
+      <div><span>Payment status</span>No real payment processed</div>
+      <div><span>Transaction ID</span>N/A</div>
+    </div>
+    <div class="eco">This bill is generated for the ECURIOUS demonstration. Values are estimates based on the simulated charging duration and configured reservation fees.</div>
+  </div>
+  <div class="foot">Questions? Contact support@ecurious.example - This Demo Bill is not a tax invoice.</div>
+</div>
+</body>
+</html>

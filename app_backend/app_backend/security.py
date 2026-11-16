@@ -1,0 +1,54 @@
+from __future__ import annotations
+
+import base64
+import hashlib
+import hmac
+import secrets
+
+
+def hash_password(password: str) -> str:
+    salt = secrets.token_bytes(16)
+    derived = hashlib.scrypt(
+        password.encode("utf-8"), salt=salt, n=2**14, r=8, p=1, dklen=32
+    )
+    return "scrypt$16384$8$1${}${}".format(
+        base64.urlsafe_b64encode(salt).decode(),
+        base64.urlsafe_b64encode(derived).decode(),
+    )
+
+
+def verify_password(password: str, encoded: str) -> bool:
+    try:
+        algorithm, n, r, p, salt_value, expected_value = encoded.split("$", 5)
+        if algorithm != "scrypt":
+            return False
+        salt = base64.urlsafe_b64decode(salt_value)
+        expected = base64.urlsafe_b64decode(expected_value)
+        actual = hashlib.scrypt(
+            password.encode("utf-8"),
+            salt=salt,
+            n=int(n),
+            r=int(r),
+            p=int(p),
+            dklen=len(expected),
+        )
+        return hmac.compare_digest(actual, expected)
+    except (ValueError, TypeError):
+        return False
+
+
+def new_session_token() -> str:
+    return secrets.token_urlsafe(32)
+
+
+def token_hash(token: str) -> str:
+    return hashlib.sha256(token.encode("utf-8")).hexdigest()
+
+
+def mask_plate(plate: str | None) -> str | None:
+    if not plate:
+        return None
+    if len(plate) <= 3:
+        return "***"
+    return f"{plate[:2]}***{plate[-2:]}"
+
